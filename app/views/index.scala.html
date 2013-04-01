@@ -1,7 +1,65 @@
 @(message: String)
 
-@main("Welcome to Play 2.1") {
-    
-    @play20.welcome(message)
-    
+@main("Defterdar") {
+
+    <div class="container-fluid">
+      <div class="row-fluid">
+
+        <div class="span9">
+          <div class="hero-unit">
+            <h1>Hello, world!</h1>
+            <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+            <p><a href="#" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+          </div>
+          <div class="row-fluid">
+            <div class="span">
+              <h2>Editor</h2>
+              <textarea name="editor1">&lt;p&gt;Initial value.&lt;/p&gt;</textarea>
+
+              <a class="btn" href="#">View details &raquo;</a></p>
+            </div><!--/span-->
+          </div><!--/row-->
+        </div><!--/span-->
+
+        <div class="span3">
+          <div class="row-fluid">
+            <div class="span" id="stajerler">
+              <div class="well sidebar-nav">
+                <ul class="nav nav-list">
+                  <li class="nav-header">Stajerler</li>
+                  <li class="active"><a href="#">stajer1</a></li>
+                  <li><a href="#">stajer2</a></li>
+                  <li><a href="#">stajer3</a></li>
+                  <li><a href="#">stajer4</a></li>
+                </ul>
+              </div><!--/.well -->
+            </div> 
+          </div>
+          <div class="row-fluid"> 
+            <div class="span" id=id="gunler">
+              <div class="well sidebar-nav">
+                <ul class="nav nav-list">
+                  <li class="nav-header">Günler</li>
+                  <li class="active"><a href="#">gün1</a></li>
+                  <li><a href="#">gün2</a></li>
+                  <li><a href="#">gün3</a></li>
+                </ul>
+              </div><!--/.well -->
+            </div> 
+          </div>
+        </div><!--/span-->
+
+      </div><!--/row-->
+
+
+      <hr>
+      <footer>
+        <p>&copy; kubudi 2013</p>
+      </footer>
+    </div><!--/.fluid-container-->
+
+    <script>
+      CKEDITOR.replace( 'editor1' );
+    </script>
+  
 }
